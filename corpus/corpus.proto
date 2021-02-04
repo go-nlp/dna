@@ -1,0 +1,12 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "github.com/go-nlp/corpus/internal/serialization/pb";
+
+message Corpus {
+	repeated string words = 1;
+	repeated int32 frequencies = 2 [packed=true];
+	int64 maxid = 3;
+	int32 totalfreq = 4;
+	int32 maxwordlength = 5;
+}

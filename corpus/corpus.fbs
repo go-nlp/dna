@@ -1,0 +1,8 @@
+table Corpus {
+      version:int;
+      words:[string];
+      frequencies:[int];
+      maxid:long;
+      totalfreq:int;
+      maxwordlength:int;
+}
